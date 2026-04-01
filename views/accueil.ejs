@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - Gestion Salle de Cinéma</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+
+  <!-- Lien vers ton fichier CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <%- include('navbar'); %> <!-- Inclure la barre de navigation -->
+
+  <!-- Section Hero -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Bienvenue dans le Gestionnaire de Cinéma 🎬</h1>
+        <p>Gérez vos films, réservations et salles facilement et efficacement.</p>
+        <a href="/api/films" class="btn">Voir les films disponibles</a>
+      </div>
+      <div class="hero-image">
+        <img src="/images/cinema-hero.jpg" alt="Cinéma" class="hero-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Films -->
+  <section class="section-films">
+    <h2>Nos Films</h2>
+    <p>Découvrez la programmation de vos films préférés.</p>
+    <div class="film-cards">
+      <div class="film-card">
+        <img src="/images/film1.jpg" alt="Film 1">
+        <h3>Film 1</h3>
+        <p>Description du film 1</p>
+        <a href="/api/films/1" class="btn">Voir plus</a>
+      </div>
+      <div class="film-card">
+        <img src="/images/film2.jpg" alt="Film 2">
+        <h3>Film 2</h3>
+        <p>Description du film 2</p>
+        <a href="/api/films/2" class="btn">Voir plus</a>
+      </div>
+      <!-- Ajoute d'autres films ici -->
+    </div>
+  </section>
+
+  <!-- Section Réservations -->
+  <section class="section-reservations">
+    <h2>Réservez vos places</h2>
+    <p>Ne manquez pas vos films préférés. Réservez votre place en ligne maintenant.</p>
+    <a href="/api/reservation" class="btn">Faire une réservation</a>
+  </section>
+
+  <!-- Footer -->
+  <%- include('footer'); %> <!-- Inclure le footer -->
+
+  <!-- Script JS -->
+  <script src="/js/script.js"></script>
+</body>
+</html>
